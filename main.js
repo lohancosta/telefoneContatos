@@ -4,12 +4,12 @@ const telefones = [];
 
 let linhas = "";
 
-form.addEventListener("submite", function (e) {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   adicionaLinha();
   atualizaTabela();
-  atualizaContatos();
+  // atualizaContatos();
 });
 
 function adicionaLinha() {
@@ -33,8 +33,8 @@ function adicionaLinha() {
     linhas += linha;
   }
 
-  inputNomeContatos = "";
-  inputTelefoneContatos = "";
+  inputNomeContatos.value = "";
+  inputTelefoneContatos.value = "";
 }
 
 function atualizaTabela() {
